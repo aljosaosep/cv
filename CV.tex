@@ -1,0 +1,501 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Aljo\v{s}a O\v{s}ep}
+\newcommand{\CVTitle}{Aljo\v{s}a O\v{s}ep's CV}
+\newcommand{\CVNote}{CV compiled on {\today}}
+\newcommand{\CVWebpage}{https://www.vision.rwth-aachen.de/person/13/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/Mies-van-der-Rohe-Straße+15,+52074+Aachen}
+{Mies-van-der-Rohe Str. 15, 52074 Aachen, Germany}
+\par
+\href{mailto:osep@vision.rwth-aachen.de}
+{osep@vision.rwth-aachen.de}
+\,\SubBulletSymbol\,
++49\,1590-5715-782
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+% ----------------- UNI AACHEN ---------------------
+
+\Entry
+\href{http://www.example.com/my-university}
+{\textbf{RWTH Aachen University}},
+Aachen, Germany
+\Gap
+\BulletItem
+Ph.D. in
+\href{http://www.example.com/my-department}
+{Computer Vision and Machine Learning}
+\hfill
+\DatestampYMD{2013}{11}{01} --
+now
+\begin{Detail}
+\SubBulletItem
+Thesis:
+%\href{http://www.example.com/my-phd-thesis}
+{Vision-based Category Agnostic Object Tracking \\for Mobile Robots and Intelligent Vehicles}
+\SubBulletItem
+Adviser:
+Prof.~Dr.~Bastian~Leibe
+\SubBulletItem
+Focus:
+Computer Vision and Machine Learning
+\end{Detail}
+%
+% \Gap
+% \BulletItem
+% M.B.A.
+% \hfill
+% \DatestampYMD{2008}{11}{15} --
+% \DatestampYMD{2009}{06}{15}
+
+% \Gap
+% \BulletItem
+% M.S. in
+% \href{http://www.example.com/my-department}
+% {Geophysical Engineering}
+% \hfill
+% \DatestampYMD{2006}{08}{15} --
+% \DatestampYMD{2008}{08}{15}
+% \begin{Detail}
+% \SubBulletItem
+% Cumulative GPA: 3.7 / 4.0
+% \end{Detail}
+
+% ----------------- UNI BONN ---------------------
+
+\BigGap
+\Entry
+\href{https://www.uni-bonn.de/}
+{\textbf{University of Bonn}},
+Bonn, Germany
+
+\Gap
+\BulletItem
+MSc. in
+\href{https://www.informatik.uni-bonn.de/de/fuer-studierende/master-of-science-in-computer-science}
+{Computer Science}
+\hfill
+\DatestampYMD{2010}{09}{01} --
+\DatestampYMD{2013}{03}{01}
+\begin{Detail}
+\SubBulletItem
+Thesis:
+\href{https://www.vision.rwth-aachen.de/media/papers/thesis_doc.pdf}
+{Multi-View 3D Reconstruction of Highly-Specular Objects}
+\SubBulletItem
+Focus:
+Computer Vision, Robotics, Computer Graphics
+%
+%\SubBulletItem
+%Graduated with College Honors.
+%\SubBulletItem
+%Cumulative GPA: 3.96 / 4.00
+\end{Detail}
+
+% ---------------- UNI MB----------------
+
+\BigGap
+\Entry
+\href{https://www.um.si}
+{\textbf{University of Maribor}},
+Maribor, Slovenia
+
+\Gap
+\BulletItem
+BSc. in
+\href{https://feri.um.si/en/}
+{Computer Science}
+\hfill
+\DatestampYMD{2007}{09}{01} --
+\DatestampYMD{2010}{09}{01}
+\begin{Detail}
+%\SubBulletItem
+%Graduated with College Honors.
+%\SubBulletItem
+%Cumulative GPA: 3.96 / 4.00
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% RESEARCH EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Research Experience}
+{Research Experience}
+{PDF:ResearchExperience}
+
+\Entry
+\href{http://www.rwth-aachen.de}
+{\textbf{RWTH Aachen University}}
+
+\Gap
+\BulletItem
+Graduate Research Student (Ph.D.), Computer Vision Group
+\hfill
+\DatestampYMD{2013}{09}{01} -- now
+\begin{Detail}
+%\SubBulletItem
+%Project:
+%Investigations on the Use of Lasers to Measure Climate Change
+\SubBulletItem
+Supervisors:
+Prof.~Dr.~Bastian~Leibe
+\SubBulletItem
+Focus:
+Vision-based multi-object tracking and object discovery
+\end{Detail}
+
+\Entry
+\href{https://www.uni-bonn.de/}
+{\textbf{University of Bonn}}
+
+\Gap
+\BulletItem
+Graduate Research Student, Computer Graphics Group
+\hfill
+\DatestampYMD{2013}{04}{01} --
+\DatestampYMD{2013}{08}{01}
+\begin{Detail}
+%\SubBulletItem
+%Project:
+%Investigations on the Use of Lasers to Measure Climate Change
+\SubBulletItem
+Supervisors:
+Prof.~Dr.~Andreas~Weber and
+Prof.~Dr.~Dominik~L.~Michels
+\SubBulletItem
+Focus:
+Physics-based modelling of material deformation
+\end{Detail}
+
+\Gap
+\BulletItem
+Undergraduate Research Student, Computer Graphics Group
+\hfill
+\DatestampYMD{2011}{05}{01} --
+\DatestampYMD{2013}{03}{01}
+\begin{Detail}
+%\SubBulletItem
+%Project:
+%Investigations on the Use of Lasers to Measure Climate Change
+\SubBulletItem
+Supervisors:
+Prof.~Dr.~Reinhard~Klein and
+Dr.~Michael~Weinmann
+\SubBulletItem
+Focus:
+3D reconstruction, image-based material retrieval
+\end{Detail}
+
+\Gap
+\BulletItem
+Undergraduate Research Student, Autonomous Intelligent Systems Group
+\hfill
+\DatestampYMD{2011}{09}{01} --
+\DatestampYMD{2012}{04}{01}
+\begin{Detail}
+%\SubBulletItem
+%Project:
+%Investigations on the Use of Lasers to Measure Climate Change
+\SubBulletItem
+Supervisors:
+Prof.~Dr.~Sven~Behnke
+\SubBulletItem
+Focus:
+Teaching assistant for the Cognitive Robotics course 
+\end{Detail}
+
+%%%%%%%%%%%%%%%%%%
+%% PUBLICATIONS %%
+%%%%%%%%%%%%%%%%%%
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+% \SubSection
+% {Journals}
+% {Journals}
+% {PDF:Journals}
+%
+%
+%\BigGap
+%\SubSection
+%{Conferences}
+%{Conferences}
+%{PDF:Conferences}
+%
+% Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+\begingroup
+%\renewcommand{\MaxNumberedItem}{[8888]}
+
+\Gap
+%\NumberedItem{[1000]}
+\href{https://arxiv.org/abs/1712.08832}
+{\underline{A.~O\v{s}ep}*, P.~Voigtlaneder*, J.~Lutien and B.~Leibe,
+``Large-Scale Object Discovery and Detector Adaptation from Unlabeled Video,''
+Arxiv Preprint:	arXiv:1712.08832 
+\DatestampYM{2017}{12}.}
+%(*equal contribution)
+
+\Gap
+%\NumberedItem{[100]}
+\href{https://arxiv.org/pdf/1712.07920.pdf}
+{\underline{A.~O\v{s}ep} and W.~Mehner and P.~Voigtlaneder and B.~Leibe,
+``Track, then Decide: Category-Agnostic Vision-based Multi-Object Tracking,''
+in \textit{ICRA},
+Brisbane, Australia,
+\DatestampYM{2018}{5}.}
+
+\Gap
+%\NumberedItem{[10]}
+\href{https://www.vision.rwth-aachen.de/media/papers/paper_final_compressed.pdf}
+{\underline{A.~O\v{s}ep} and W.~Mehner and M.~Mathias and B.~Leibe,
+``Combined Image- and World-Space Tracking in Traffic Scenes,''
+in \textit{ICRA},
+Singapore, Singapore,
+\DatestampYM{2017}{5}.}
+
+\Gap
+%\NumberedItem{[10]}
+\href{https://www.vision.rwth-aachen.de/media/papers/bmvc16_klostermann_final.pdf}
+{D.~Klostermann and \underline{A.~O\v{s}ep} and J.~Stueckler and B.~Leibe,
+``Unsupervised Learning of Shape-Motion Patterns for Objects in Urban Street Scenes,''
+in \textit{BMVC},
+York, UK,
+\DatestampYM{2016}{9}.}
+
+\Gap
+%\NumberedItem{[10]}
+\href{https://www.vision.rwth-aachen.de/media/papers/paper_compressed.pdf}
+{D.~Kochanov and \underline{A.~O\v{s}ep} and J.~Stueckler and B.~Leibe,
+``Scene Flow Propagation for Semantic Mapping and Object Discovery in Dynamic Street Scenes,''
+in \textit{IROS},
+Daejeon, South Korea,
+\DatestampYM{2016}{10}.}
+
+\Gap
+%\NumberedItem{[10]}
+\href{https://www.vision.rwth-aachen.de/media/papers/osep_ICRA16_paper.pdf}
+{\underline{A.~O\v{s}ep} and A.~Hermans and F.~Engelmann and D.~Klostermann and B.~Leibe,
+``Multi-Scale Object Candidates for Generic Object Tracking in Street Scenes,''
+in \textit{ICRA}, Stockholm, Sweden,
+\DatestampYM{2016}{5}.}
+
+\Gap
+%\NumberedItem{[10]}
+\href{https://www.vision.rwth-aachen.de/media/papers/mitzel15icra_3d_shape_representation.pdf}
+{D.~Mitzel and J.~Diesel, \underline{A.~O\v{s}ep} and U.~Rafi and B.~Leibe,
+``A Fixed-Dimensional 3D Shape Representation for Matching Partially Observed Objects in Street Scenes,''
+in \textit{ICRA},
+Seattle, USA,
+\DatestampYM{2015}{5}.}
+
+\Gap
+%\NumberedItem{[10]}
+\href{https://www.vision.rwth-aachen.de/media/papers/weinmann_reconstruction_of_mirroring_objects_iccv2013.pdf}
+{M.~Weinmann and \underline{A.~O\v{s}ep} and R.~Ruiters and and R.~Klein,
+``Multi-View Normal Field Integration for 3D Reconstruction of Mirroring Objects,''
+in \textit{ICCV},
+Sydney, Australia,
+\DatestampYM{2013}{12}.}
+
+\Gap
+%\NumberedItem{[10]}
+\href{https://www.vision.rwth-aachen.de/media/papers/weinmann-2012-3DReconstruction.pdf}
+{M.~Weinmann and R.~Ruiters and \underline{A.~O\v{s}ep} and C.~Schwartz and R.~Klein,
+``Fusing Structured Light Consistency and Helmholtz Normals for 3D Reconstruction,''
+in \textit{BMVC},
+Surrey, UK,
+\DatestampYM{2012}{9}.}
+
+\endgroup
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Awards \&\newline
+Scholarships}
+{Awards \& Scholarships}
+{PDF:AwardsAndScholarships}
+
+\Gap
+\BulletItem
+\href{http://www.sklad-kadri.si/en/scholarships/zois-scholarships/}{National (Slovenian) scholarship for gifted students}
+\hfill
+\DatestampYMD{2008}{09}{01} --
+\DatestampYMD{2013}{03}{01}
+\newline
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+\BulletItem
+Slovenian: Native language.
+
+\Gap
+\BulletItem
+English: Fluent (speaking, reading, writing).
+
+\Gap
+\BulletItem
+German: Intermediate (reading); basic (speaking, writing).
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+% \Section
+% {Skills}
+% {Skills}
+% {PDF:Skills}
+
+% \Entry
+% C++,
+% Python,
+% MATLAB,
+% Java
+
+%%%%%%%%%%%%%%%
+%% RESEARCH INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Research Interests}
+{Research Interests}
+{PDF:ResearchInterests}
+
+My research interest lie at the intersection between cognitive robotics and computer vison:
+\begin{Detail}
+\BulletItem
+Scene understanding: Multi-object tracking, semantic scene and instance segmentation, SLAM
+\BulletItem
+Life-long learning: Object discovery, learning via scene exploration, weakly-supervised and unsupervised learning
+\end{Detail}
+
+
+%%%%%%%%%%%%%%%
+%% INTERESTS %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Interests}
+{Interests}
+{PDF:Interests}
+
+\Entry
+Travelling,
+Football,
+Rock Climbing.
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{References}
+{References}
+{PDF:References}
+
+\BulletItem
+\textbf{Prof.~Dr.~Bastian~Leibe}
+\newline
+RWTH Aachen University University
+\newline
+Mies-van-der-Rohe Str. 15, 52074 Aachen, Germany
+\newline
+\href{mailto:leibe@vision.rwth-aachen.de}
+{leibe@vision.rwth-aachen.de}
+\,\SubBulletSymbol\,
++49\,(241)\,80-22731
+
+\end{Body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\UseNoteFont%
+\null\hfill%
+[\textit{\CVNote}]
+
+\end{document}
